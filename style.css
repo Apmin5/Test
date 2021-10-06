@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+}
+.container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bgimg-1{
+    background-image: url(/image/parallax1.jpg);
+    min-height: 100%;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo span{
+    background-color: #333;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+    
+}
+.nav-bar{
+    position: sticky;
+    top: 0;
+}
+/* humberger start */
+#humberger {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    opacity: 0.4;
+}
+.line {
+    padding: 0px;
+    width: 50px;
+    height: 5px;
+    background-color: aqua;
+    margin: 10px;
+    transition: all .5s ease-in-out;
+}
+.plustranslate {
+    transform: rotate(45deg) translate(9px , 12px);
+}
+.minustranslate {
+    transform: rotate(-45deg) translate(9px , -12px);
+}
+/* menu start */
+.menu{
+    height: 39px;
+    background-color: #E6E9F2;
+    display: flex;
+    align-items: center;
+    
+
+}
+.menu-bar{
+    width: 0;
+    height: 5px;
+    background-color: greenyellow;
+    transition: all .4s ease-in-out;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: lightslategray;
+}
+.nav-bar a:hover{
+    background-color:violet;
+}
+/* about start */
+.about{
+    max-width: 1039px;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about h1,.i{
+    text-align: center;
+}
+.about-body{
+    display: flex;
+
+}
+.about-body .abbd-left div.bgimg-2{
+    background-image: url(/image/parallax1.jpg);
+    width: 100%;
+    height: 100%;
+}
+.abbd-left{
+    flex:50%;
+    padding: 20px;
+}
+.abbd-right{
+    flex: 50%;
+    padding: 20px;
+}
+.about h3{
+    text-align: center;
+    margin-top:100px ;
+}
+.one{
+    padding: 10px;
+    width: 90%;
+    
+}
+.two{
+    padding: 10px;
+    width: 85%;
+    
+}
+.three{
+    padding: 10px;
+    width: 75%;   
+}
+.one,.two,.three{
+    text-align: center;
+    background-color: lightslategray;
+}
+.about h5,.bgimg-3{
+    letter-spacing: 10px;
+}
+.about-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(131, 120, 120);
+    margin-top: 50px;
+}
+.bgimg-3{
+    background-image: url(/image/parallax2.jpg);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* START PORTFOLIO */
+#portfolio span{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#portfolio h1{
+    text-align: center;
+}
+.grid-container {
+    max-width: 1039px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    max-width: 244px;
+  }
+.portfolio-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-btn button{
+    padding: 10px;
+    margin: 50px;
+}
+.portfolio-btn button:hover{
+    background-color: blue;
+    color: white
+}
+.bgimg-4{
+    background-image: url(/image/parallax3.jpg);
+    min-height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+#contact h1{
+    text-align: center;
+}
+.contact-body{
+    display: flex;
+}
+.bgimg-5{
+    flex: 50%;
+    background-image: url(/image/map.jpg);
+    min-height: 200px;
+    padding: 20px;
+    min-width: 50px;
+}
+.contact-right{
+    flex: 50%;
+    padding:20px;
+}
+.BL{
+    display: block;
+    margin:20px;
+    padding: 5px;
+}
+.mar {
+    margin: 20px;
+    padding: 5px;
+}
+.contact-footer{
+    max-width: 1039px;
+    margin: 0 auto;
+}
+.wid{
+    width: 335px;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.top{
+    text-decoration: none;
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid violet;
+    color: violet;
+    display: block;
+    margin-bottom: 20px;
+}
+#forHum{
+    background-color: #333;
+    
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+}
+
+
+@media(max-width:600px){
+    .web,.de{
+        display: none;
+    }
+    #humberger{
+        display: inline;
+    }
+    a{
+        display: block;
+    }
+}
